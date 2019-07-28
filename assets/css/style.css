@@ -1,3 +1,20 @@
+/*Start: Animation*/
+@keyframes bounce {
+    0% { transform: translate(5px, 0px) rotate(0deg); }
+    10% { transform: translate(-5px, 0px) rotate(0deg); }
+    20% { transform: translate(4px, 0px) rotate(0deg); }
+    30% { transform: translate(-4px, 0px) rotate(0deg); }
+    40% { transform: translate(3px, 0px) rotate(0deg); }
+    50% { transform: translate(-3px, 0px) rotate(0deg); }
+    60% { transform: translate(2px, 0px) rotate(0deg); }
+    70% { transform: translate(-2px, 0px) rotate(0deg); }
+    80% { transform: translate(1px, 0px) rotate(0deg); }
+    90% { transform: translate(-1px, 0px) rotate(0deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+  }
+
+/*Start: CSS Code shared among all portfolio pages as template formatting*/
+
 body {
     background-image: url("../images/hypnotize.png");
     background-repeat: repeat;
@@ -33,6 +50,10 @@ header {
     font-size: 24px;
 }
 
+.headerName:hover {
+    animation: bounce 1.0s;
+}
+
 .headerLinks {
     font-size: 16px;
     float: right;
@@ -56,7 +77,24 @@ h1 {
     border-bottom-color: #4aaaa5;
 }
 
+footer{
+    color:#ffffff;
+    padding-top: 25px;
+    padding-bottom:10px;
+    font-size: 10px;
+    background-color: #666666;
+    width:100%;
+    margin-top: 20px;
+    text-align: center;
+    bottom:0;
+    position: fixed;
+    border-top: solid;
+    border-top-width: 8px;
+    border-top-color:#4aaaa5;
+}
+
 .content {
+    position: relative;
     background-color: #ffffff;
     padding:20px;
     width: 920px;
@@ -69,17 +107,35 @@ h1 {
     border-color: #dddddd;    
 }
 
-footer{
-    color:#ffffff;
-    padding-top: 25px;
-    padding-bottom:10px;
-    font-size: 10px;
-    background-color: #666666;
-    position: fixed;
-    bottom:0;
-    width:100%;
-    text-align: center;
-    border-top: solid;
-    border-top-width: 5px;
-    border-top-color:#4aaaa5;
+/*Start: CSS classes and ids for About Me page*/
+
+.aboutMeImg {
+    float: left;
+    margin: 0 10px 10px 0;
 }
+
+/*Start: CSS Classes and ids for Contact Form*/
+
+form {
+    width: 100%  
+}
+
+input {
+    width: 100%
+}
+
+textarea {
+    width: 100%
+}
+
+.contactSubmitBtn {
+    background-color:#4aaaa5;
+    color:white;
+    text-align: center;
+    border: none;
+    height: 30px;
+    width: 60px;
+}
+
+/*Start: CSS classes and ids for Portfolio page*/
+
