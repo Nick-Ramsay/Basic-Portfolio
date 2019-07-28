@@ -77,6 +77,20 @@ h1 {
     border-bottom-color: #4aaaa5;
 }
 
+.content {
+    background-color: #ffffff;
+    padding:20px;
+    width: 920px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: #dddddd;    
+}
+
 footer{
     color:#ffffff;
     padding-top: 25px;
@@ -91,20 +105,6 @@ footer{
     border-top: solid;
     border-top-width: 8px;
     border-top-color:#4aaaa5;
-}
-
-.content {
-    position: relative;
-    background-color: #ffffff;
-    padding:20px;
-    width: 920px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-    border: solid;
-    border-width: 1px;
-    border-color: #dddddd;    
 }
 
 /*Start: CSS classes and ids for About Me page*/
@@ -138,4 +138,37 @@ textarea {
 }
 
 /*Start: CSS classes and ids for Portfolio page*/
+/*NOTE - Referenced following page: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_images_side_by_side */
+
+.portCol {
+    float: left;
+    position: relative;
+    margin: 10px;
+    width:30%;
+    height: 175px;
+}
+
+.portCol:hover {
+    animation: bounce 1.0s;
+}
+
+#portLabel {
+    position: absolute;
+    padding: 15px 0 15px 0;
+    bottom:5px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    width:100%;
+    text-align: center;
+}
+
+/* Clearfix (clear floats) */
+.portRow::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
 
