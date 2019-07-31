@@ -175,7 +175,7 @@ textarea {
 .portRow::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
   }
 
 
