@@ -24,6 +24,7 @@ body {
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
+    line-height: 24px;
 }
 
 header {
@@ -60,7 +61,7 @@ header {
     padding-top: 30px;
 }
 
-#headerLinksText {
+.headerLinksText {
     padding: 5px;
     text-decoration: none;
     color:#4aaaa5;
@@ -93,8 +94,8 @@ h1 {
 
 footer{
     color:#ffffff;
-    padding-top: 25px;
-    padding-bottom:10px;
+    padding-top: 15px;
+    padding-bottom:5px;
     font-size: 10px;
     background-color: #666666;
     width:100%;
@@ -135,6 +136,10 @@ textarea {
     border: none;
     height: 30px;
     width: 60px;
+}
+
+.contactSubmitBtn:hover {
+    animation: bounce 1.0s;
 }
 
 /*Start: CSS classes and ids for Portfolio page*/
