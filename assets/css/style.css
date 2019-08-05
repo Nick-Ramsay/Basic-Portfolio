@@ -136,6 +136,7 @@ textarea {
     border: none;
     height: 30px;
     width: 60px;
+    margin-top:10px;
 }
 
 .contactSubmitBtn:hover {
