@@ -92,6 +92,10 @@ h1 {
     border-color: #dddddd;    
 }
 
+label {
+    margin: 5px 0 5px 0;
+}
+
 footer{
     color:#ffffff;
     padding-top: 15px;
